@@ -1,0 +1,30 @@
+#chess-container{
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: white;       
+}
+
+#chess-container>div {
+    display: flex;
+}
+
+span{      
+    width: 30px;
+    height: 30px;      
+}
+
+div:nth-child(odd)>span:nth-child(odd),div:nth-child(even)>span:nth-child(even){
+    background-color: black;
+}
+
+span:hover{
+    background-color: lightblue !important;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: darkblue !important;
+}
